@@ -23,13 +23,14 @@ public class Processeur {
      */
     public static void main(String[] args) {
 
-        Controller ctrl = new Controller(null, null);
-        ServiceCPU service = new ServiceCPU(null, null);
+        Controller ctrl = new Controller();
+        ServiceCPU service = new ServiceCPU();
         View view = new View();
 
         ctrl.setRefServiceCPU(service);
         ctrl.setRefView(view);
         service.setRefCtrl(ctrl);
         view.setRefCtrl(ctrl);
+        ctrl.start();
     }
 }

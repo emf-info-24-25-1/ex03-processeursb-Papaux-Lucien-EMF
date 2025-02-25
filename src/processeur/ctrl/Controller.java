@@ -28,9 +28,9 @@ public class Controller {
     /**
      * Constructeur de la classe Controller. Les attributs de la classe Controller sont initialisés à null.
      */
-    public Controller(View refView, ServiceCPU refServiceCPU) {
-        this.refView = refView;
-        this.refServiceCPU = refServiceCPU;
+    public Controller() {
+        this.refView = null;
+        this.refServiceCPU = null;
     }
 
     /**

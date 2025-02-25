@@ -37,9 +37,9 @@ public class ServiceCPU {
      * Constructeur de la classe ServiceCPU. Les attributs de la classe ServiceCPU
      * sont initialisés.
      */
-    public ServiceCPU(CPU cpus[], Controller refCtrl) {
-        this.cpus = cpus;
-        this.refCtrl = refCtrl;
+    public ServiceCPU() {
+        this.cpus = new CPU [NMBRE_CPU];
+        this.refCtrl = null;
     }
 
     /**
